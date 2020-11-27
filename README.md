@@ -22,7 +22,7 @@
  
  <p>To give you an example and idea of what we mean by landing page please look at the following design and links to
   some of our previous design builds</p>
- <img src="/front-end-example.JPG">
+
  
  <a href='https://complete-moves.co.uk/'>Complete-moves.co.uk</a><br>
  <a href='https://propertybooking.co.uk/'>Property Booking</a><br>
@@ -40,8 +40,14 @@
  </ul>
  
  <h3>Getting Started</h3>
- <p>To get started, simply download a copy of this repository and use it to push to your own repository which we will
+ <p>To get started, simply download a copy / fork this off from this repository and use it to push to your own
+  repository
+  which we will
   then use to assess once you've completed.
+ </p>
+ 
+ <p>Alternatively if you plan to use any other framework other than laravel then please skip cloning or forking off
+  this repository
  </p>
  
  <h3>The Deliverables</h3>
