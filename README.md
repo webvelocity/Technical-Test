@@ -3,105 +3,87 @@
 
 <h3>Introduction</h2>
 <p>Welcome to the Fullcomms developer tech test!</p>
-<p>This exercise will give you a small insight to what we do and what we're looking for in a developer, there are no
- trick questions or purpose hidden bit of code to throw you off so there is nothing to worry about. There is no time-limit 
- other than the discussed delivery date given to you by us so take along as you need to between starting and handing
-  it in.
+<p>This exercise will give you a small insight into what fullcomms does best and that's building expertly designed
+ websites, beautifully crafted frontends and cleanly written back-end code.
  </p>
+ 
+ <p>This test will demonstrate your abilities to take a design and build it for both Desktop and mobile as well as
+  demonstrate your knowledge of the MVC pattern within a framework, leveraging the frameworks features to delivery
+   clean code.
+  </p>
+  
+  <p>To get started, please fork off of this repo into your own repository.</p>
  
  <h3>The Brief</h3>
- <p>At Fullcomms we pride ourselves in delivering crisp looking websites for our clients as well as writing robust,clean
-  and concise code.</p>
-  
-<p>For this technical test we would like you the developer to build a simple landing page which will provide a little
- information about the company website, display some property cards and little call to action sections which would
-  drive traffic to other areas of the websites such.</p>
-  <p>We would also like a secondary page where a potential customer
-   could enter in their information which is then stored into a database and is viewable by the company.
+ <p>At Fullcomms we pride ourselves in developing and delivering quality websites & web applications for our
+  various clients by writing clean and concise code, ensuring the project is robust and well built so the clients have
+   peace of mind with what they are receiving.
  </p>
- 
- <p>To give you an example and idea of what we mean by landing page please look at the following design and links to
-  some of our previous design builds</p>
+  
+<p>For this Technical test we would like you to look at the following design <a href="https://drive.google.com
+/drive/folders/1PXZn8xtDVfdcKR5q_d-EhAjLtYGX7GKc?usp=sharing">Design Sample.</a>.</p>
 
- 
- <a href='https://complete-moves.co.uk/'>Complete-moves.co.uk</a><br>
- <a href='https://propertybooking.co.uk/'>Property Booking</a><br>
- <a href='https://potterswarren.co.uk/'>Potters Warren</a><br>
- <a href='https://forstalmead.co.uk/'>Forstal Mead</a><br>
- <a href='https://yourvividhome.co.uk/'>Vivid Homes</a><br>
- 
- <p>Usually the design is broken into;</p>
- <ul>
- <li>Top Bar Navigation</li>
- <li>Hero Image and Text</li>
- <li>Property cards</li>
- <li>Promotion Box containing a reference to another page</li>
- <li>Footer with information</li>
- </ul>
- 
- <h3>Getting Started</h3>
- <p>To get started, simply download a copy / fork this off from this repository and use it to push to your own
-  repository
-  which we will
-  then use to assess once you've completed.
+<h5>The scenario</h5>
+<p>The "Client" has requested this SPA landing page to be built to or as close to as the design so they can promote
+ some of the properties they have on sale, they've requested that it should work on both a traditional desktop
+  computer as well as a mobile device.
+</p>
+<p>The client is also requesting that the form which is part of the design takes the data and processes it correctly
+ into a permanent datastore such as MySQL database or PostgresSQL, this information and the form it self should follo
+  w any GDPR guidelines.
  </p>
  
- <p>Alternatively if you plan to use any other framework other than laravel then please skip cloning or forking off
-  this repository
+ <p>The client has also requested a method of communication from the website to let him and his workers know that a
+  new lead from the website has landed so they can action it correctly. They do not wish to receive multiple emails
+   from the same client within a 24 time period.
  </p>
  
- <h3>The Deliverables</h3>
- <p>For this test we expect a single page homepage which demonstrates and shows off your frontend HTML/CSS skillet
-  as well as your ability to build responsive markup which looks both clean and crisp on  Desktop, Tablet and
-   Mobile viewports. We would also expect a lesser designed page which contains a form which allows customers to submit
-    their information and interest in a particular home on this mock website also taking into consideration additional
-     form elements and functionality you may add to enhance user experience.
-  </p>
-  
-  <p>Data submitted on the form <strong>must</strong> save to a persistent data storage such as a MySQL database
-  , the database structure should include appropriate datatypes. What database technology you chose to use it
-   entirely up to you as long as the form data is saved and is accessible.
-  </p>
+ <p>Optionally the client has requested a secure way to view, edit and download a copy of this information, though it
+  is not a phase 1 request, they would be pleased to receive this early and could bolster our working relationship
+   with them in future work.
+ </p>
  
- 
- <h4>What we will be looking for</h4>
- 
- <h5>Frontend</h5>
+<h5>What we will be looking at</h5>
+
+<h6>Frontend Ability</h6>
 <ul>
-<li>The use of frontend framework such as Bootstrap / Foundation with Bootstrap 4 being preferred.</li>
-<li>Well written SASS/LESS or CSS</li>
-<li>The structure of the style files and any Javascript files</li>
+<li>The use of a Frontend Framework such as Bootstrap or Foundation</li>
+<li>Well written SASS/LESS or CSS files</li>
+<li>The code and structure of both style and any used javascript files</li>
 <li>Appropriate use of helper classes</li>
-<li>Responsive Grid structure to meet design on desktop and mobile platforms</li>
+<li>Use of a responsive Grid design</li>
+</ul>
+<h6>Backend Ability</h6>
+<ul>
+<li>The use of MVC pattern within a PHP framework such as Laravel though other frameworks are acceptable</li>
+<li>Appropriate use of Data Models & Database migration files</li>
+<li>Cleanly written Controllers</li>
+<li>Use of available packages and/or framework functionality</li>
+<li>Practising and following the PSR coding styles (PSR12 preferred)</li>
+<li>Ability to derive data models from visual design</li>
 </ul>
 
-<h5>Backend</h5>
-<ul>
-<li>PHP code written within the Laravel 8.X framework though another MVC framework will be accepted</li>
-<li>Appropriate use of data Models and migration files</li>
-<li>Cleanly written Controller logic</li>
-<li>Use of PSR12 coding standards</li>
-</ul>
+<h5>Additional Notes</h5>
 
-<h5>Optional addtions</h5>
-<ul>
-<li>Authenticated login / view to display the data captured</li>
-<li>A way to export the data for use outside of the database</li>
-</ul>
+<p>Please continuously commit to GIT so we can keep track of your progression, please note there is no time limit
+ apart from the agreed upon submission date so take your time and and focus on delivering your best code.
+</p>
+
+<p>Additionally, any extra uses of framework features and uses which assist with the "client's" need will be assessed
+ but
+is not mandatory to the final delivery. Any visuals created outside the design will not be assessed so don't feel
+the need to create anything exceptional or over the top.</p>
   
-<p>Please do not spend too much time or over-engineer a solution,  we are assessing you based on how you take the small
- requires and examples given to you and how you build it within an MVC framework and utilize the frameworks built in
-  features to deliver a solution which looks good on all devices and is written cleanly.
-</p>
-
-<p>Any additional views created outside of the two requested views will not be assessed on frontend ability.</p>
-
-<h4>Submission</h4>
-<p>Once you've completed push your code to your repository for us to clone down and run. Please leave instructions on
- how to run your project including any composer, npm or artisan commands to run.
-</p>
-
-<p>Please also include any additional details such as which version of PHP you've written your code in.</p>
-
-<p>Please email us to let us know when the code is ready for assessment</p>
-
+<p>We would prefer all the code is contained and written within a Laravel Project (the code supplied) to demonstrate
+ your knowledge and experience with the framework however you are free to use any framework you choose as long as it
+  is using the MVC pattern, please note you will be expected to work with Laravel.</p>
+  
+<p>Any additional technologies use in conjunction with a framework such as VUEjs or ReactJs is entirely up to you but
+   will not be reviewed as we are only interested in your frontend ability, ability to deliver a design and your core
+    PHP skills within the Laravel or similar framework.</p>
+    
+ <h3>Submission</h3>
+ <p>Once you've completed the test, please contact us with the repository link for us to clone down and build, please
+  include any instructions to get it up and running as we can only assess code which will run and work so any
+   information and commands we need to run will be great.
+ </p>
