@@ -56,7 +56,7 @@
 <h6>Backend Ability</h6>
 <ul>
 <li>The use of MVC pattern within a PHP framework such as Laravel though other frameworks are acceptable</li>
-<li>Appropriate use of Data Models & Database migration files</li>
+<li>Appropriate use of Data Models & Relationships between models</li>
 <li>Cleanly written Controllers</li>
 <li>Use of available packages and/or framework functionality</li>
 <li>Practising and following the PSR coding styles (PSR12 preferred)</li>
