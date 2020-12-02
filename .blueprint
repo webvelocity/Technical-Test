@@ -1,0 +1,13 @@
+created:
+    - app/Http/Controllers/PropertyController.php
+    - database/factories/PropertyFactory.php
+    - database/migrations/2020_12_02_183829_create_properties_table.php
+    - app/Models/Property.php
+    - tests/Feature/Http/Controllers/PropertyControllerTest.php
+    - app/Http/Requests/PropertyStoreRequest.php
+    - resources/views/property/index.blade.php
+updated:
+    - routes/web.php
+models:
+    Post: { title: 'string:400', content: longtext, published_at: 'nullable timestamp', author_id: 'id:user' }
+    Property: { title: 'string:400', image: longtext, slug: longtext, address: longtext, suburb: tinytext, postalcode: tinytext, share_price: decimal, min_deposit: decimal, published_at: 'nullable timestamp', author_id: 'id:user' }
