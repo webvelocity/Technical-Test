@@ -7,6 +7,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -32,7 +35,7 @@
                     <div class="p-3">
                         <h4 class="property-card__title">{{$property->title}}</h4>
                         <p>
-                            {{ ucfirst($property->address), ucfirst($property->suburb) }}
+                            {{ ucfirst($property->address), ucfirst($property->suburb), ucfirst($property->city)  }}
                         </p>
                         {{--                <span>Share Price: {{$property->share_price}}</span>--}}
                         {{--                <span>Min Deposit: {{$property->min_deposit}}</span>--}}
@@ -70,8 +73,8 @@
         <div class="col-md-6">
             <img src="{{asset ('img/promo-image.png')}}" alt="What is Shared Ownership" class="w-100">
         </div>
-        <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
-            <h2>
+        <div class="col-md-6 px-3 py-5 p-md-5 d-flex flex-column justify-content-center">
+            <h2 class="mb-4">
                 What is Shared Ownership?
             </h2>
             <p>
@@ -92,10 +95,14 @@
 
     <div class="row">
         <div class="col-md-6">
-            <img src="{{}}}" alt="">
+            <img src="{{}}" alt="">
         </div>
     </div>
 </div>
+
+
+{{-- FOOTER --}}
+@include('partials.footer')
 
 
 </body>

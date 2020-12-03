@@ -20,6 +20,7 @@ class Property extends Model
         'slug',
         'address',
         'suburb',
+        'city',
         'postalcode',
         'share_price',
         'min_deposit',
