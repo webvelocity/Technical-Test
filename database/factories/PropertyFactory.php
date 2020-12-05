@@ -29,9 +29,10 @@ class PropertyFactory extends Factory
             'slug' => $this->faker->slug,
             'address' => $this->faker->text,
             'suburb' => $this->faker->word,
+            'city' => $this->faker->city,
             'postalcode' => $this->faker->word,
-            'share_price' => $this->faker->randomFloat(0, 0, 23),
-            'min_deposit' => $this->faker->randomFloat(0, 0, 30),
+            'share_price' => $this->faker->randomFloat(0, 0, 9999999999.),
+            'min_deposit' => $this->faker->randomFloat(0, 0, 9999999999.),
             'published_at' => $this->faker->dateTime(),
             'author_id' => User::factory(),
         ];

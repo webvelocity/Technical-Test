@@ -1,3 +1,7 @@
+#
+## MODELS
+#
+
 models:
   Property:
     title: string:400
@@ -5,12 +9,27 @@ models:
     slug: longtext
     address: longtext
     suburb: tinytext
+    city: tinytext
     postalcode: tinytext
     share_price: decimal
     min_deposit: decimal
     published_at: nullable timestamp
     author_id: id:user
 
+
+  Post:
+    title: string:400
+    slug: string
+    featured_image: string
+    content: longtext
+    published_at: nullable timestamp
+    author_id: id:user
+    relationships:
+      belongsToMany: Category
+
+#
+## CONTROLLERS
+#
 controllers:
   Property:
     index:
@@ -22,27 +41,19 @@ controllers:
       save: property
       redirect: property.index
 
+  Post:
+    index:
+      query: all
+      render: post.index with:posts
+
+    store:
+      validate: title, content, author_id
+      save: post
+      send: ReviewPost to:post.author.email with:post
+      flash: post.title
+      redirect: post.index
 
 
 
-#models:
-#  Post:
-#    title: string:400
-#    content: longtext
-#    published_at: nullable timestamp
-#    author_id: id:user
-#
-#controllers:
-#  Post:
-#    index:
-#      query: all
-#      render: post.index with:posts
-#
-#    store:
-#      validate: title, content, author_id
-#      save: post
-#      send: ReviewPost to:post.author.email with:post
-#      dispatch: SyncMedia with:post
-#      fire: NewPost with:post
-#      flash: post.title
-#      redirect: post.index
+
+seeders: Post

@@ -2,16 +2,12 @@
 
 namespace Tests\Feature\Http\Controllers;
 
-use App\Events\NewPost;
-use App\Jobs\SyncMedia;
 use App\Mail\ReviewPost;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Queue;
 use JMac\Testing\Traits\AdditionalAssertions;
 use Tests\TestCase;
 
@@ -59,8 +55,6 @@ class PostControllerTest extends TestCase
         $author = User::factory()->create();
 
         Mail::fake();
-        Queue::fake();
-        Event::fake();
 
         $response = $this->post(route('post.store'), [
             'title' => $title,
@@ -81,12 +75,6 @@ class PostControllerTest extends TestCase
 
         Mail::assertSent(ReviewPost::class, function ($mail) use ($post) {
             return $mail->hasTo($post->author->email) && $mail->post->is($post);
-        });
-        Queue::assertPushed(SyncMedia::class, function ($job) use ($post) {
-            return $job->post->is($post);
-        });
-        Event::assertDispatched(NewPost::class, function ($event) use ($post) {
-            return $event->post->is($post);
         });
     }
 }

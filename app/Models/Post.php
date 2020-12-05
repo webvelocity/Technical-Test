@@ -16,6 +16,8 @@ class Post extends Model
      */
     protected $fillable = [
         'title',
+        'slug',
+        'featured_image',
         'content',
         'published_at',
         'author_id',
@@ -40,6 +42,11 @@ class Post extends Model
         'published_at',
     ];
 
+
+    public function categories()
+    {
+        return $this->belongsToMany(\App\Models\Category::class);
+    }
 
     public function author()
     {

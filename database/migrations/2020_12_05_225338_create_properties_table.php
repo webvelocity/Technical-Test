@@ -20,6 +20,7 @@ class CreatePropertiesTable extends Migration
             $table->longText('slug');
             $table->longText('address');
             $table->string('suburb');
+            $table->string('city');
             $table->string('postalcode');
             $table->decimal('share_price');
             $table->decimal('min_deposit');

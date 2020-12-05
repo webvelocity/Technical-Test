@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\NewPost;
 use App\Http\Requests\PostStoreRequest;
-use App\Jobs\SyncMedia;
 use App\Mail\ReviewPost;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -32,10 +30,6 @@ class PostController extends Controller
         $post = Post::create($request->validated());
 
         Mail::to($post->author->email)->send(new ReviewPost($post));
-
-        SyncMedia::dispatch($post);
-
-        event(new NewPost($post));
 
         $request->session()->flash('post.title', $post->title);
 

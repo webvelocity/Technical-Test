@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 
-Route::resource('post', App\Http\Controllers\PostController::class)->only('index', 'store');
-
 
 Route::resource('property', App\Http\Controllers\PropertyController::class)->only('index', 'store');
+
+Route::resource('post', App\Http\Controllers\PostController::class)->only('index', 'store');

@@ -17,8 +17,6 @@
 }
 
 
-
-
 :root {
     --primary-color: #333376;
     --secondary-color: #ee2323;
@@ -27,7 +25,8 @@
     --dark-grey: #63666a;
     --light: #fff;
 }
-html, body{
+
+html, body {
     width: 100%;
 }
 
@@ -82,6 +81,35 @@ Property Card
 }
 
 /*
+Latest News Feature
+ */
+#latest-news-feature .date ,#latest-news-feature a.category{
+    color: #d0cac5;
+    font-size: 13px;
+}
+#latest-news-feature p {
+    font-size: 14px;
+    color: #434343;
+}
+
+#latest-news-feature .read-more {
+    background-color: var(--dark-grey);
+    color: var(--light);
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+#latest-news-feature a{
+    text-decoration: none;
+}
+
+#latest-news-feature a.view-all-cta {
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+/*
 Share Ownership Feature
  */
 
@@ -95,6 +123,19 @@ Share Ownership Feature
     color: var(--light);
 }
 
+
+/*
+Contact Form
+ */
+
+#contact-form-section {
+    background-color: #e4e4e4;
+}
+
+
+/*
+Footer
+ */
 footer p {
     font-size: 13px;
     color: #434343;
@@ -110,7 +151,7 @@ footer .social-icons li {
     padding: 0 5px;
     margin-right: 10px;
     color: var(--light);
-    background-color:#b0b0b0;
+    background-color: #b0b0b0;
     border-radius: 100%;
 }
 
@@ -130,17 +171,19 @@ footer h5.headings {
 }
 
 .footer-nav {
-background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
-footer nav ul li{
-   margin-right:24px
+footer nav ul li {
+    margin-right: 24px
 }
-footer nav ul li a{
-    color:var(--light);
-    font-size:14px
+
+footer nav ul li a {
+    color: var(--light);
+    font-size: 14px
 }
-footer nav ul li a:hover{
+
+footer nav ul li a:hover {
     color: #fafafa;
     text-decoration: none;
 }
@@ -180,7 +223,7 @@ input[type="search"] {
 }
 
 input[type="search"] {
-    width:100%;
+    width: 100%;
     border-radius: 5px 0 0 5px;
     -webkit-appearance: none;
 }
@@ -551,7 +594,8 @@ template {
 }
 
 .h3, h3 {
-    font-size: 1.75rem
+    font-size: 1.75rem;
+    color: #434343;
 }
 
 .h4, h4 {
@@ -2372,6 +2416,15 @@ input[type=date].form-control, input[type=datetime-local].form-control, input[ty
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
+}
+
+input[type=checkbox] {
+    width: 20px;
+}
+
+input[type=submit] {
+    background-color: var(--secondary-color);
+
 }
 
 select.form-control:focus::-ms-value {

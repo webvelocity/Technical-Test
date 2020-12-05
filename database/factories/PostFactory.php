@@ -25,6 +25,8 @@ class PostFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(4),
+            'slug' => $this->faker->slug,
+            'featured_image' => $this->faker->word,
             'content' => $this->faker->paragraphs(3, true),
             'published_at' => $this->faker->dateTime(),
             'author_id' => User::factory(),
