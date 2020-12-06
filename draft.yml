@@ -11,8 +11,9 @@ models:
     suburb: tinytext
     city: tinytext
     postalcode: tinytext
-    share_price: decimal
-    min_deposit: decimal
+    price: decimal
+    share_percentage: decimal
+    min_deposit: tinytext
     published_at: nullable timestamp
     author_id: id:user
 

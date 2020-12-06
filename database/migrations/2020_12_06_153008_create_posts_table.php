@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePropertiesTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,12 @@ class CreatePropertiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('properties', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title', 400);
-            $table->longText('image');
-            $table->longText('slug');
-            $table->longText('address');
-            $table->string('suburb');
-            $table->string('city');
-            $table->string('postalcode');
-            $table->decimal('share_price');
-            $table->decimal('min_deposit');
+            $table->string('slug');
+            $table->string('featured_image');
+            $table->longText('content');
             $table->timestamp('published_at')->nullable();
             $table->unsignedBigInteger('author_id');
             $table->timestamps();
@@ -37,6 +32,6 @@ class CreatePropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('properties');
+        Schema::dropIfExists('posts');
     }
 }

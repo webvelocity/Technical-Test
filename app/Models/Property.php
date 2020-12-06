@@ -22,7 +22,8 @@ class Property extends Model
         'suburb',
         'city',
         'postalcode',
-        'share_price',
+        'price',
+        'share_percentage',
         'min_deposit',
         'published_at',
         'author_id',
@@ -35,8 +36,8 @@ class Property extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'share_price' => 'decimal',
-        'min_deposit' => 'decimal',
+        'price' => 'decimal:3',
+        'share_percentage' => 'decimal:3',
         'author_id' => 'integer',
     ];
 

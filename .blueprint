@@ -3,9 +3,9 @@ created:
     - app/Http/Controllers/PostController.php
     - database/factories/PropertyFactory.php
     - database/factories/PostFactory.php
-    - database/migrations/2020_12_05_225338_create_properties_table.php
-    - database/migrations/2020_12_05_225339_create_posts_table.php
-    - database/migrations/2020_12_05_225340_create_category_post_table.php
+    - database/migrations/2020_12_06_153007_create_properties_table.php
+    - database/migrations/2020_12_06_153008_create_posts_table.php
+    - database/migrations/2020_12_06_153009_create_category_post_table.php
     - app/Models/Property.php
     - app/Models/Post.php
     - database/seeders/PostSeeder.php
@@ -16,7 +16,6 @@ created:
 updated:
     - routes/web.php
 models:
-    Models\Post: { title: 'string:400', content: text, category: 'string nullable', author_id: 'biginteger unsigned', published_at: 'datetime nullable', featured_image: 'string nullable' }
     Models\User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
-    Property: { title: 'string:400', image: longtext, slug: longtext, address: longtext, suburb: tinytext, city: tinytext, postalcode: tinytext, share_price: decimal, min_deposit: decimal, published_at: 'nullable timestamp', author_id: 'id:user' }
+    Property: { title: 'string:400', image: longtext, slug: longtext, address: longtext, suburb: tinytext, city: tinytext, postalcode: tinytext, price: decimal, share_percentage: decimal, min_deposit: tinytext, published_at: 'nullable timestamp', author_id: 'id:user' }
     Post: { title: 'string:400', slug: string, featured_image: string, content: longtext, published_at: 'nullable timestamp', author_id: 'id:user', relationships: { belongsToMany: Category } }

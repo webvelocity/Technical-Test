@@ -13,7 +13,20 @@ const cssvariables = require("postcss-css-variables");
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-        cssvariables(/*options*/)
-    ]);
+    .postCss(
+        'resources/css/app.css', 'public/css', [
+            cssvariables(/*options*/) /*Process CSS Variables*/
+        ])
+
+
+mix.js('resources/js/bootstrap.js', 'public/js',)
+    .postCss('resources/css/bootstrap.css', 'public/css', [cssvariables()])
+
+
+mix.webpackConfig({
+    devServer: {
+        proxy: {
+            '*': 'http://localhost:8000'
+        }
+    }
+});

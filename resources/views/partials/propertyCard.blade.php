@@ -17,10 +17,13 @@
                     <div class="p-3">
                         <h4 class="property-card__title">{{$property->title}}</h4>
                         <p>
-                            {{ ucfirst($property->address), ucfirst($property->suburb), ucfirst($property->city)  }}
+                            {{ ucfirst($property->address).', '.ucfirst($property->suburb).', '.ucfirst($property->city)  }}
+                            <br>
+                            {{($property->postalcode)}}
                         </p>
-                        {{--                <span>Share Price: {{$property->share_price}}</span>--}}
-                        {{--                <span>Min Deposit: {{$property->min_deposit}}</span>--}}
+                        <span>Min share: {{($property->share_percentage)*100}}% (full price £{{ number_format($property->price, 0)}})</span><br>
+                        <span>Share Price: £{{ number_format( $property->share_percentage*$property->price , 0) }}</span><br>
+                        <span>Min Deposit: £{{ number_format($property->min_deposit, 0) }}</span>
                     </div>
 
 
@@ -31,12 +34,14 @@
                         </div>
                     </div>
 
-                    <div class="cta">
-                        <div class="col">
-                            <a href="{{$property->slug}}">Available</a>
-                        </div>
-                        <div class="col">
-                            {{--                    <a href="{{share($property->slug)}}">Share</a>--}}
+                    <div class="cta px-3 py-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="{{$property->slug}}" class="px-3 btn btn-orange">Available</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="{{$property->slug}}" class="px-3 btn-outline-light btn">Share</a>
+                            </div>
                         </div>
                     </div>
                 </div>
