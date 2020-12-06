@@ -10,10 +10,19 @@
         @foreach($properties as $property)
             <div class="col-md property-card mb-5">
                 <div class="property-card__inner">
-                    <span class="property-card__feature-tag">{{ $property->feature }}</span>
-                    <span class="property-card__feature-tag">Resale</span>
+                    @if( isset($property->featured_type))
+                    <span class="property-card__feature-tag {{ ($property->featured_type == 'New Build') ? 'new-build' : ''}}">
+                        {{ $property->featured_type }}
+                    </span>
+                    @endif
+
+                        @if( isset($property->image))
                     <img src="{{ asset('img/properties/'.$property->image) }}" alt="{{$property->title}}"
                          class="w-100 property-card__img">
+                        @else
+                            <img src="{{ asset('img/properties/'.$property->image) }}" alt="{{$property->title}}"
+                                 class="w-100 property-card__img">
+                            @endif
                     <div class="p-3">
                         <h4 class="property-card__title">{{$property->title}}</h4>
                         <p>

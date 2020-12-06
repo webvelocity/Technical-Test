@@ -60,15 +60,20 @@ Property Card
 }
 
 .property-card__feature-tag {
+    font-size: 14px;
     position: absolute;
-    padding: 5px 30px;
+    padding: 5px 25px;
     color: var(--light);
     background: var(--dark-grey);
 }
 
-.property-card__img {
-
+.property-card__feature-tag.new-build {
+    background-color: #98277c
 }
+
+.property-card__img {
+}
+
 
 .property-card__title {
     font-family: 'Gotham Rounded';
@@ -76,28 +81,33 @@ Property Card
     font-size: 22px;
     font-weight: 800;
 }
-.property-card .cta{
+
+.property-card .cta {
     background-color: var(--primary-color);
 }
-.property-card .cta a{
+
+.property-card .cta a {
     text-decoration: none;
     font-size: 12px;
     /*color: var(--light);*/
-    padding-top:5px;
+    padding-top: 5px;
     padding-bottom: 7px;
     border-radius: 25px;
 }
-.property-card .cta a.btn-orange{
-  background-color: var(--orange);
+
+.property-card .cta a.btn-orange {
+    background-color: var(--orange);
     color: var(--light);
 }
+
 /*
 Latest News Feature
  */
-#latest-news-feature .date ,#latest-news-feature a.category{
+#latest-news-feature .date, #latest-news-feature a.category {
     color: #d0cac5;
     font-size: 13px;
 }
+
 #latest-news-feature p {
     font-size: 14px;
     color: #434343;
@@ -110,7 +120,7 @@ Latest News Feature
     border-radius: 25px;
 }
 
-#latest-news-feature a{
+#latest-news-feature a {
     text-decoration: none;
 }
 
