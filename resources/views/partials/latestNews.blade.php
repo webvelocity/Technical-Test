@@ -30,8 +30,8 @@
                 </div>
             @endforeach
 
-            <div class="col-12">
-                <a href="#" class="view-all-cta">View All</a>
+            <div class="col-12 mt-3">
+                <a href="#" class="view-all-cta">View All <i class="fa fa-chevron-right font-weight-light"></i></a>
             </div>
         </div>
     </div>

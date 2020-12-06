@@ -23,7 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/propertyCard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/propertyCard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/contact-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/contact-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/latestNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/latestNews.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +190,7 @@
       <workItem from="1606670196615" duration="4004000" />
       <workItem from="1606927600920" duration="9257000" />
       <workItem from="1606939615158" duration="24829000" />
-      <workItem from="1607262767555" duration="7753000" />
+      <workItem from="1607262767555" duration="10449000" />
     </task>
     <servers />
   </component>

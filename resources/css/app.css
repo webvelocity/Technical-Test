@@ -125,9 +125,16 @@ Latest News Feature
 }
 
 #latest-news-feature a.view-all-cta {
+    font-family: 'Gotham Rounded';
+    font-size: 14px;
     color: var(--dark-grey);
     text-transform: uppercase;
     border-radius: 25px;
+}
+
+#latest-news-feature .view-all-cta > i {
+    font-size: 13px;
+    margin-left: 0.5rem;
 }
 
 /*
@@ -209,9 +216,34 @@ footer nav ul li a:hover {
     text-decoration: none;
 }
 
+form {
+    max-width: 80%;
+    margin: 0 auto;
+}
 
 input[type="search"] {
     box-sizing: border-box;
+}
+
+input[type=text] {
+    padding: 22px 0;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox]:active {
+    outline: none;
+    border: none
+}
+
+input[type=submit] {
+    padding:10px 0;
+    background-color: var(--secondary-color);
+    border:1px solid var(--secondary-color);
+    border-radius: 25px !important;
 }
 
 .searchbox-container {
