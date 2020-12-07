@@ -18,7 +18,7 @@
 <body>
 
 {{-- Latest Properties--}}
-@include('partials.header')
+{{--@include('partials.header')--}}         //@Todo
 {{-- ./Latest Properties--}}
 
 
