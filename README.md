@@ -1,5 +1,5 @@
 <img src="https://fullcomms.co.uk/wp-content/uploads/2017/09/logo.png">
-<h1>Fullcomms Developer Technical Test</h1>
+<h1>Fullcomms Developer Technical Test (Note: I did not have much time becuase of work, I hope you can see my skill)</h1>
 
 <h3>Introduction</h2>
 <p>Welcome to the Fullcomms developer tech test!</p>
